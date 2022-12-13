@@ -30,7 +30,7 @@ export default function MyWishListIndex({ participant }: { participant: any }) {
       >
         <Box>
           <Title mb={25} order={2} color="dimmed">{participant.email}s Wishlist</Title>
-          <Card shadow="xs" style={{ width: "500px" }}>
+          <Card shadow="xs" style={{ width: "500px", minHeight: "200px" }}>
             <WishlistTable list={list} setList={setList} />
           </Card>
         </Box>

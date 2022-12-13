@@ -8,7 +8,7 @@ export default function ParticipantPage({ data }: { data: any }) {
       <Title color="teal">Draw {data.draw.id}</Title>
       <Box>
         {data.participants.map((participant: any) => (
-          <Link key={participant.id} href={`participants/${participant.id}`}>
+          <Link key={participant.id} href={`/participants/${participant.id}`}>
             <Card shadow="xs" mt={25}>
               <Group>
                 <ChristmasTree color="teal" />

@@ -53,7 +53,7 @@ export default function Layout(props: any) {
               </Title>
             </Group>
             <Group ml={100}>
-              <Link href="/draw" style={{textDecoration: "none", color: "#404d47"}}>
+              <Link href="/draws/create" style={{textDecoration: "none", color: "#404d47"}}>
                 <Text>Create New Draw</Text>
               </Link>
               <Link href="/draws" style={{textDecoration: "none", color: "#404d47"}}>

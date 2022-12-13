@@ -13,7 +13,7 @@ export default function ReceiverWishListIndex({ receiver }: { receiver: any }) {
         `http://localhost:3000/gifts-wishlist/${receiver.id}`
       );
       const data = await response.json();
-      console.log(data);
+
       setList(data);
     }
     fetchWishlist();
@@ -47,7 +47,7 @@ export default function ReceiverWishListIndex({ receiver }: { receiver: any }) {
             </Title>
           </Center>
 
-          <Card mt={25} shadow="xs" style={{ width: "500px" }}>
+          <Card mt={25} shadow="xs" style={{ width: "500px", minHeight: "200px" }}>
             <WishlistTable
               list={list}
               setList={setList}
